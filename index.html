@@ -8,25 +8,32 @@
 <script>document.documentElement.lang="he";document.documentElement.dir="rtl";try{var a=JSON.parse(localStorage.getItem("haegel_a11y")||"{}")||{};["big","contrast","still","links","readable"].forEach(function(k){if(a[k]===true)document.documentElement.classList.add("a-"+k)})}catch(e){}</script>
 <meta name="description" content="שווארמה בית העגל, בן עמי 44 עכו. שווארמת עגל (וגם הודו) שנחתכת מהשיפוד, לאפה ב-₪33, סלטים טריים וחמוצים חופשי. א׳–ה׳ 11:00–20:00.">
 <meta name="theme-color" content="#13100e">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="בית העגל">
 <meta property="og:type" content="restaurant">
 <meta property="og:locale" content="he_IL">
 <meta property="og:site_name" content="שווארמה בית העגל">
 <meta property="og:title" content="שווארמה בית העגל · לאפה ₪33 · בן עמי 44, עכו">
 <meta property="og:description" content="עגל (וגם הודו) על השיפוד, נחתך להזמנה. סלטים טריים, חמוצים חופשי. א׳–ה׳ 11:00–20:00.">
 <meta property="og:url" content="https://quorixsh-coder.github.io/beit-haegel-akko/">
-<meta property="og:image" content="https://quorixsh-coder.github.io/beit-haegel-akko/hero.webp">
-<meta property="og:image:width" content="1440">
-<meta property="og:image:height" content="957">
-<meta property="og:image:alt" content="שיפוד שווארמה מסתובב מול גוף חימום, מעל דלפק נירוסטה (תמונה להמחשה)">
+<meta property="og:image" content="https://quorixsh-coder.github.io/beit-haegel-akko/hero-wide.webp">
+<meta property="og:image:width" content="2560">
+<meta property="og:image:height" content="1440">
+<meta property="og:image:alt" content="פרוסות שווארמה נחתכות מהשיפוד (תמונה להמחשה)">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="שווארמה בית העגל · בן עמי 44, עכו">
 <meta name="twitter:description" content="שווארמת עגל מהשיפוד, לאפה ₪33, חמוצים חופשי.">
-<meta name="twitter:image" content="https://quorixsh-coder.github.io/beit-haegel-akko/hero.webp">
+<meta name="twitter:image" content="https://quorixsh-coder.github.io/beit-haegel-akko/hero-wide.webp">
 <!-- בעת העלאה לדומיין: להחליף og:image ו-canonical לכתובות מלאות (https://domain/...) — וואטסאפ לא מציג תמונה בנתיב יחסי -->
 <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
 <meta name="googlebot" content="noindex, nofollow">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Restaurant","name":"שווארמה בית העגל","image":"https://quorixsh-coder.github.io/beit-haegel-akko/hero.webp","telephone":"+972-77-764-4786","address":{"@type":"PostalAddress","streetAddress":"בן עמי 44","addressLocality":"עכו","addressCountry":"IL"},"servesCuisine":["שווארמה","מזרח תיכוני","ישראלי"],"priceRange":"₪","hasMap":"https://www.google.com/maps/place/?q=place_id:ChIJuRWMDXLJHRURvgFdVGSYTX0","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Sunday","Monday","Tuesday","Wednesday","Thursday"],"opens":"11:00","closes":"20:00"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.1","reviewCount":"78","bestRating":"5"}}
+{"@context":"https://schema.org","@type":"Restaurant","name":"שווארמה בית העגל","image":"https://quorixsh-coder.github.io/beit-haegel-akko/hero-wide.webp","telephone":"+972-77-764-4786","address":{"@type":"PostalAddress","streetAddress":"בן עמי 44","addressLocality":"עכו","addressCountry":"IL"},"servesCuisine":["שווארמה","מזרח תיכוני","ישראלי"],"priceRange":"₪","hasMap":"https://www.google.com/maps/place/?q=place_id:ChIJuRWMDXLJHRURvgFdVGSYTX0","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Sunday","Monday","Tuesday","Wednesday","Thursday"],"opens":"11:00","closes":"20:00"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.1","reviewCount":"78","bestRating":"5"}}
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -65,6 +72,20 @@ html.a-still *,html.a-still *::before,html.a-still *::after{animation:none!impor
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-padding-top:calc(var(--hdr) + 12px);-webkit-text-size-adjust:100%;overflow-x:clip;background:var(--char)}
 html:has(dialog[open]){overflow:hidden}
+.appbtn{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:40px;min-width:40px;padding:0 12px;border:1px solid var(--cu-lo);border-radius:999px;background:transparent;color:var(--cu-t);font:inherit;font-size:.8rem;cursor:pointer;flex:0 0 auto}
+.appbtn:hover{border-color:var(--cu)}.appbtn svg{width:16px;height:16px}
+@media (max-width:420px){.appbtn .t{display:none}.appbtn{padding:0}}
+html.standalone .appbtn,html.standalone .applink{display:none}
+.appd [hidden]{display:none!important}
+@media (max-width:560px){.appbtn{display:none}}
+.applink{background:none;border:0;font:inherit;color:var(--cu-t);cursor:pointer;padding:inherit}
+@media (min-width:561px){.applink{display:none}}
+.appd{display:grid;gap:16px;justify-items:center;text-align:center;padding:4px 0 8px}
+.appd img{width:96px;height:96px;border-radius:22px;box-shadow:0 10px 30px -8px #000,inset 0 0 0 1px var(--line2)}
+.appd h2{margin:0}.appd p{margin:0;color:var(--soft);max-width:34ch}
+.appd ol{text-align:right;margin:0;padding-inline-start:20px;color:var(--soft);display:grid;gap:6px;max-width:36ch}
+.appd .fine2{font-size:.78rem;color:var(--muted)}
+
 body{background:var(--char);color:var(--text);font-family:var(--sans);font-size:1.03rem;line-height:1.65;overflow-x:clip;-webkit-font-smoothing:antialiased}
 img{max-width:100%;height:auto;display:block}
 button{font:inherit;color:inherit;background:none;border:0;border-radius:0;cursor:pointer}
@@ -545,8 +566,10 @@ html.a-still .ember{opacity:.6}
       <a class="sw" href="#trays">מגשים</a>
       <a class="sw" href="#visit">שעות ומיקום</a>
       <a class="sw" href="#report">ביקורות</a>
+      <a class="sw applink" href="#install" id="appLink">אפליקציה</a>
     </nav>
     <span class="sp"></span>
+    <button class="appbtn" type="button" id="appBtn" aria-label="התקנת האפליקציה של בית העגל"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2.2"/><path d="M11 18.5h2"/></svg><span class="t">אפליקציה</span></button>
     <span class="lamp" id="lamp" role="status"><i aria-hidden="true"></i><span class="lt">א׳–ה׳ 11:00–20:00</span></span>
   </div>
 </header>
@@ -824,6 +847,18 @@ html.a-still .ember{opacity:.6}
   </div>
 </dialog>
 
+<dialog id="appDlg" aria-labelledby="apT">
+  <div class="dh"><span class="sc">app · אפליקציה</span><button class="dx" type="button" data-close aria-label="סגירה"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+  <div class="db"><div class="appd">
+    <img src="icon-192.png" alt="" width="96" height="96">
+    <h2 id="apT">בית העגל באפליקציה</h2>
+    <p>אותו תפריט, אותן שעות ואותה הזמנה, באייקון על מסך הבית. נפתח מסך מלא, בלי דפדפן.</p>
+    <button class="btn btn-ox" type="button" id="appInstall" hidden>התקנת האפליקציה</button>
+    <ol id="appIos" hidden><li>לוחצים על כפתור השיתוף בתחתית הדפדפן (ריבוע עם חץ למעלה).</li><li>בוחרים ״הוספה למסך הבית״.</li><li>לוחצים ״הוספה״. האייקון של בית העגל יופיע במסך הבית.</li></ol>
+    <ol id="appOther" hidden><li>פותחים את התפריט של הדפדפן (שלוש נקודות).</li><li>בוחרים ״התקנת אפליקציה״ או ״הוספה למסך הבית״.</li></ol>
+    <p class="fine2">גרסת הדגמה. ההזמנות דרך האפליקציה אינן נשלחות לעסק.</p>
+  </div></div>
+</dialog>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
 <script>/*!
@@ -1334,6 +1369,23 @@ function motion(again){
 safe("a11y",applyA11y); safe("statics",statics); safe("hours",renderHours); safe("ticket",()=>renderTicket()); safe("tray",renderTray); safe("spy",spy); safe("motion",()=>motion(false));
 setInterval(()=>safe("hours",renderHours),60000);
 </script>
+<script>
+/* ===== APP (PWA) ===== manifest.webmanifest + sw.js at the site root */
+(function(){try{
+  var st=window.matchMedia&&matchMedia('(display-mode: standalone)').matches||navigator.standalone===true;
+  if(st)document.documentElement.classList.add('standalone');
+  if('serviceWorker' in navigator&&location.protocol==='https:'){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').catch(function(){})})}
+  var deferred=null,dlg=document.getElementById('appDlg'),ins=document.getElementById('appInstall'),ios=document.getElementById('appIos'),oth=document.getElementById('appOther');
+  var isIOS=/iphone|ipad|ipod/i.test(navigator.userAgent)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1);
+  window.addEventListener('beforeinstallprompt',function(e){e.preventDefault();deferred=e;});
+  function show(){ins.hidden=!deferred;ios.hidden=!(isIOS&&!deferred);oth.hidden=!!deferred||isIOS;if(typeof openDlg==='function')openDlg(dlg);else dlg.showModal();}
+  document.getElementById('appBtn').addEventListener('click',show);var al=document.getElementById('appLink');if(al)al.addEventListener('click',function(e){e.preventDefault();show();});
+  ins.addEventListener('click',function(){if(!deferred)return;deferred.prompt();deferred.userChoice.finally(function(){deferred=null;if(typeof closeDlg==='function')closeDlg(dlg);else dlg.close();});});
+  window.addEventListener('appinstalled',function(){document.documentElement.classList.add('standalone')});
+  if(location.hash==='#install'&&!st){setTimeout(show,700)}
+}catch(e){}})();
+</script>
+
 
 </body>
 </html>
